@@ -32,12 +32,22 @@ Install from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/yo
 
 3. Save and reload any open YouTube tabs.
 
-### Manual (unpacked extension)
+### Manual — Chrome (unpacked extension)
 
 1. Download or clone this folder.
 2. Open `chrome://extensions`.
 3. Toggle **Developer mode** on (top right).
 4. Click **Load unpacked** and select this folder.
+5. Reload any open YouTube tabs.
+
+### Manual — Firefox (temporary add-on)
+
+Firefox only allows unsigned extensions to be loaded temporarily (they are removed on browser restart). For a permanent install use the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/youtube-restore-page-zoom/) link above.
+
+1. Download or clone this folder.
+2. Open `about:debugging#/runtime/this-firefox`.
+3. Click **Load Temporary Add-on…**.
+4. Select the `manifest.json` file inside this folder.
 5. Reload any open YouTube tabs.
 
 ## Permissions
