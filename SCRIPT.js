@@ -4,7 +4,7 @@
 // @version      2026-05-08
 // @description  Disables The Annoying "Video Pinch Zoom" in YouTube-Web's New Update[8-May-2026]
 // @author       bcranton
-// @match        https://www.youtube.com/
+// @match        *://*.youtube.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==

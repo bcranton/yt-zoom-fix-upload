@@ -19,17 +19,7 @@ Install from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/yo
 ### TamperMonkey / GreaseMonkey (any browser)
 
 1. Install [TamperMonkey](https://www.tampermonkey.net/) (Chrome/Edge/Safari) or [GreaseMonkey](https://www.greasespot.net/) (Firefox).
-2. Create a new userscript and paste in the contents of `content.js`, adding the following header at the top:
-
-```js
-// ==UserScript==
-// @name         YouTube Restore Page Zoom
-// @match        *://*.youtube.com/*
-// @run-at       document-start
-// @grant        none
-// ==/UserScript==
-```
-
+2. Create a new userscript and replace all contents with the contents of `SCRIPT.js` from this repo.
 3. Save and reload any open YouTube tabs.
 
 ### Manual — Chrome (unpacked extension)
