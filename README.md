@@ -6,7 +6,33 @@ A tiny Chrome extension that restores the original pinch-to-zoom behavior on You
 
 YouTube listens for `wheel` events with `ctrlKey: true` (which is how macOS trackpad pinches are delivered) and runs its own zoom logic. This extension registers a capture-phase listener on `window` at `document_start` that calls `stopImmediatePropagation()` on those events before YouTube can see them. Because `preventDefault()` is never called, the browser's native page-zoom default kicks in.
 
-## Install (unpacked)
+## Install
+
+### Chrome
+
+Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/youtube-restore-page-zoom/ckemlpiiiilommkpcbnkmgbgbhpnakmk).
+
+### Firefox
+
+Install from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/youtube-restore-page-zoom/).
+
+### TamperMonkey / GreaseMonkey (any browser)
+
+1. Install [TamperMonkey](https://www.tampermonkey.net/) (Chrome/Edge/Safari) or [GreaseMonkey](https://www.greasespot.net/) (Firefox).
+2. Create a new userscript and paste in the contents of `content.js`, adding the following header at the top:
+
+```js
+// ==UserScript==
+// @name         YouTube Restore Page Zoom
+// @match        *://*.youtube.com/*
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
+```
+
+3. Save and reload any open YouTube tabs.
+
+### Manual (unpacked extension)
 
 1. Download or clone this folder.
 2. Open `chrome://extensions`.
