@@ -3,6 +3,12 @@
   "name": "YouTube Restore Page Zoom",
   "version": "1.0.1",
   "description": "Restores native browser pinch-to-zoom on youtube.com so the whole page zooms instead of just the video player.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "yt-restore-page-zoom@extension",
+      "strict_min_version": "109.0"
+    }
+  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
