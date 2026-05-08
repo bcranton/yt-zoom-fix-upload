@@ -5,7 +5,7 @@
 // @description  Restores full-page pinch-to-zoom on YouTube, overriding the player's zoom hijack.
 // @author       bcranton
 // @match        *://*.youtube.com/*
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @icon         https://raw.githubusercontent.com/bcranton/yt-zoom-fix-upload/main/icon48.png
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
