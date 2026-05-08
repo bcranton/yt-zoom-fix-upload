@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Restore Page Zoom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Restores native browser pinch-to-zoom on youtube.com so the whole page zooms instead of just the video player.",
   "icons": {
     "16": "icon16.png",
