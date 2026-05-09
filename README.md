@@ -1,10 +1,10 @@
 # YouTube Restore Page Zoom
 
-A tiny Chrome extension that restores the original pinch-to-zoom behavior on YouTube. After a 2026 YouTube update, pinching on a macOS trackpad zooms only the video player. This extension brings back full-page zoom.
+A tiny Chrome extension that restores the original pinch-to-zoom behavior on YouTube. After a 2026 YouTube update, pinching on a trackpad (or using `Ctrl`/`Cmd` + scroll) zooms only the video player. This extension brings back full-page zoom.
 
 ## How it works
 
-YouTube listens for `wheel` events with `ctrlKey: true` (which is how macOS trackpad pinches are delivered) and runs its own zoom logic. This extension registers a capture-phase listener on `window` at `document_start` that calls `stopImmediatePropagation()` on those events before YouTube can see them. Because `preventDefault()` is never called, the browser's native page-zoom default kicks in.
+YouTube listens for `wheel` events with `ctrlKey: true` (which is how trackpad pinches and `Ctrl`/`Cmd` + scroll are delivered) and runs its own zoom logic. This extension registers a capture-phase listener on `window` at `document_start` that calls `stopImmediatePropagation()` on those events before YouTube can see them. Because `preventDefault()` is never called, the browser's native page-zoom default kicks in.
 
 ## Install
 
